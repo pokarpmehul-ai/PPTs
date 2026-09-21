@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classroom Presentations</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    color: #172033;
+  }
+  .wrap {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 55px 22px 70px;
+  }
+  .hero {
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  .hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 5vw, 48px);
+    letter-spacing: -1px;
+  }
+  .hero p {
+    margin: 0;
+    color: #5b667a;
+    font-size: 17px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(30, 55, 90, .10);
+    border: 1px solid #e6ebf3;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 42px rgba(30, 55, 90, .15);
+  }
+  .icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: #edf3ff;
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    color: #4169e1;
+    margin-bottom: 9px;
+  }
+  h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+  .card p {
+    color: #647084;
+    line-height: 1.55;
+    min-height: 50px;
+    margin-bottom: 24px;
+  }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #4169e1;
+    color: white;
+    padding: 13px 19px;
+    border-radius: 11px;
+    font-weight: 700;
+  }
+  .btn:hover { background: #3155c6; }
+  footer {
+    text-align: center;
+    margin-top: 42px;
+    color: #7a8495;
+    font-size: 13px;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+    .wrap { padding-top: 35px; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Classroom Presentations</h1>
+      <p>Download the presentations for classroom teaching and practice.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="icon">⚡</div>
+        <div class="tag">Class 7 · Science</div>
+        <h2>Electric Current and its Effects</h2>
+        <p>Chapter 10 presentation covering circuits, symbols, heating effect, fuse, safety and magnetic effects.</p>
+        <a class="btn" href="/Electric_Current_Class7.pptx" download>Download PPT</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">📐</div>
+        <div class="tag">Class 6 · Mathematics</div>
+        <h2>Mensuration</h2>
+        <p>Chapter 10 presentation covering perimeter, regular shapes, area, formulas, examples and cost problems.</p>
+        <a class="btn" href="/Mensuration_Class6.pptx" download>Download PPT</a>
+      </article>
+    </section>
+
+    <footer>Educational Resources</footer>
+  </main>
+</body>
+</html>
